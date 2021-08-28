@@ -1,0 +1,20 @@
+uuid: 070c3150-8c8b-4afe-85d1-3422b01e8569
+langcode: en
+status: true
+dependencies:
+  module:
+    - location_time
+  theme:
+    - bartik
+id: locationtimeblock
+theme: bartik
+region: sidebar_second
+weight: -7
+provider: null
+plugin: location_time
+settings:
+  id: location_time
+  label: 'Location Time Block'
+  provider: location_time
+  label_display: visible
+visibility: {  }
