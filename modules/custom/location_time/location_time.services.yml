@@ -1,0 +1,3 @@
+services:
+ location_time.get_time:
+   class: Drupal\location_time\GetTime

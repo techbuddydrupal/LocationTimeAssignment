@@ -1,0 +1,6 @@
+location_time.admin:
+  title: 'Location Time Settings'
+  description: 'Configure Location Time Settings'
+  parent: system.admin_config_system
+  route_name: location_time.settings
+  weight: 100

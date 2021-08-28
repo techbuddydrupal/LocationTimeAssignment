@@ -1,0 +1,11 @@
+<?php 
+// use \Datetime;   
+// date_default_timezone_set('America/Chicago');
+// $now = new DateTime(); 
+// $timezone = date_default_timezone_get();
+// dump($timezone);
+// dump($now->format('dS M Y - h:i A '));    // MySQL datetime format
+  $service = \Drupal::service('location_time.get_time');
+  dump($service->getTime($timezone));
+  die;
+  ?>

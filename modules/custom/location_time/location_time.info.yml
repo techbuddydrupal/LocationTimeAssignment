@@ -1,0 +1,8 @@
+name: 'Location Time Module'
+description: 'Module to display user location and time'
+type: 'module'
+package: 'Custom'
+core_version_requirement: ^8.8 || ^9
+version: '8.x'
+dependencies:
+  - block
