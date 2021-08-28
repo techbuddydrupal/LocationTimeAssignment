@@ -805,5 +805,5 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-$settings['config_sync_directory'] = '../config/global';
+$settings['config_sync_directory'] = 'config/global';
 // $config['system.logging']['error_level'] = 'verbose';  
