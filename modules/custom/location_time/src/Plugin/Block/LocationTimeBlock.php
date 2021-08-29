@@ -31,12 +31,17 @@ class LocationTimeBlock extends BlockBase implements ContainerFactoryPluginInter
     );
   }
   public function build(){
-    $output = $this->getTime->getTime('Asia/Kolkata');
-    // dump($output);
-    // die;
+    $country = \Drupal::config('location_time.settings')->get('country');
+    $city = \Drupal::config('location_time.settings')->get('city');
+    $timezone = \Drupal::config('location_time.settings')->get('timezones');
+
+    $output = $this->getTime->getTime($timezone);
+
     return array(
-      '#type' => 'markup',
-      '#markup' => $output,
+      '#theme' => 'location_time',
+      '#country' => $country,
+      '#city' => $city,
+      '#time' => $output,
   );
   }
 }
