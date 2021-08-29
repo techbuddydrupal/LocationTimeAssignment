@@ -30,12 +30,7 @@ class LocationTimeForm extends ConfigFormBase {
      * {@inheritdoc}
      */
     public function buildForm(array $form, FormStateInterface $form_state) {
-        $config = $this->config('location_time.settings');
-        $timezone_option = array("America/Chicago", "America/New_York", "Asia/Tokyo",
-                                "Asia/Dubai", "Asia/Kolkata", "Europe/Amsterdam",
-                                "Europe/Oslo", "Europe/London"
-                                );
-        
+        $config = $this->config('location_time.settings');        
         $form['country'] = array(
             '#type' => 'textfield',
             '#title' => 'Country',
@@ -52,7 +47,16 @@ class LocationTimeForm extends ConfigFormBase {
             '#type' => 'select',
             '#title' => 'Select TimeZone',
             '#multiple' => false,
-            '#options' => $timezone_option,
+            '#options' => [
+                "America/Chicago" => $this->t('America/Chicago'),
+                "America/New_York" => $this->t('America/New_York'),
+                "Asia/Tokyo" => $this->t('Asia/Tokyo'),
+                "Asia/Dubai" => $this->t('Asia/Dubai'),
+                "Asia/Kolkata" => $this->t('Asia/Kolkata'),
+                "Europe/Amsterdam" => $this->t('Europe/Amsterdam'),
+                "Europe/Oslo" => $this->t('Europe/Oslo'),
+                "Europe/London" => $this->t('Europe/London'),
+            ],
             '#default_value' => $config->get('timezones'),
         );
 	
