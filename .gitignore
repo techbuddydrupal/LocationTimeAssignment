@@ -21,3 +21,8 @@ robots.txt
 update.php
 web.config
 .editorconfig
+sites/default/files/php/
+sites/default/files/js/
+sites/default/files/css/
+sites/default/files/styles/
+

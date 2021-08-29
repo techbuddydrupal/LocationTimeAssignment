@@ -42,6 +42,9 @@ class LocationTimeBlock extends BlockBase implements ContainerFactoryPluginInter
       '#country' => $country,
       '#city' => $city,
       '#time' => $output,
+      '#cache' => [
+        'max-age' => 0,
+      ]
   );
   }
 }
