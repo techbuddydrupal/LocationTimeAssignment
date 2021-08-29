@@ -12,7 +12,7 @@ class GetTime {
 
  public function  getTime($region = ''){
    if (empty($region)) {
-    //  If now region is passed, then return UTC time
+    //  If no region is passed, then return UTC time
       $current = new DateTime(); 
       return $current->format('dS M Y - h:i A ');
    }
