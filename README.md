@@ -7,3 +7,7 @@ Steps to setup project on local :-
 5. Run "drush cim" after db setup complete.
 6. Run "drush cr".
 7. Site should be accessible on "localhost/Specbee_Assignment"
+
+Admin User Login Details:-
+id - admin
+password - admin
