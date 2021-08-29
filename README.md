@@ -9,5 +9,5 @@ Steps to setup project on local :-
 7. Site should be accessible on "localhost/Specbee_Assignment"
 
 Admin User Login Details:-
-id - admin
-password - admin
+username - "admin"
+password - "admin"
